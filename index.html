@@ -30,6 +30,35 @@
 </head>
 
 <body>
+	
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">StylishFontPro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
     <h1 style="text-align:center;">Stylish Font Generator</h1>
     <p style="text-align:center"><b>Developed By StylishFontPro</b></p>
     <textarea type="text" class="form-control fancytext" style="width:100%;  background-color:#333333 !important; color:#ffffff" required="required" name="text" placeholder="Type or paste text here.." value=""></textarea>
@@ -430,8 +459,6 @@ function backward(text) {
   return $("#english-text").val();
 }
 
-
-
     function createMap(chars) {
       var alphanum = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
       var i = 0;
@@ -600,8 +627,7 @@ function backward(text) {
         str += chars[Math.floor(Math.random()*chars.length)];
       }
       return str;
-    }
-    
+    }    
     
     const flourishArray = ["★·.·´¯`·.·★ [[text]] ★·.·´¯`·.·★", "▁ ▂ ▄ ▅ ▆ ▇ █ [[text]] █ ▇ ▆ ▅ ▄ ▂ ▁", "°°°·.°·..·°¯°·._.· [[text]] ·._.·°¯°·.·° .·°°°", "¸,ø¤º°`°º¤ø,¸¸,ø¤º° [[text]] °º¤ø,¸¸,ø¤º°`°º¤ø,¸", "ıllıllı [[text]] ıllıllı", "•?((¯°·._.• [[text]] •._.·°¯))؟•", "▌│█║▌║▌║ [[text]] ║▌║▌║█│▌", "×º°”˜`”°º× [[text]] ×º°”˜`”°º×", "•]••´º´•» [[text]] «•´º´••[•", "*•.¸♡ [[text]] ♡¸.•*", "╰☆☆ [[text]] ☆☆╮", ".•°¤*(¯`★´¯)*¤° [[text]] °¤*(¯´★`¯)*¤°•.", "(¯´•._.• [[text]] •._.•´¯)", "¸„.-•~¹°”ˆ˜¨ [[text]] ¨˜ˆ”°¹~•-.„¸", "░▒▓█ [[text]] █▓▒░", "░▒▓█►─═  [[text]] ═─◄█▓▒░", "★彡 [[text]] 彡★", "•´¯`•. [[text]] .•´¯`•", "§.•´¨'°÷•..× [[text]] ×,.•´¨'°÷•..§", "•°¯`•• [[text]] ••´¯°•", "(¯`*•.¸,¤°´✿.｡.:* [[text]] *.:｡.✿`°¤,¸.•*´¯)", "|!¤*'~``~'*¤!| [[text]] |!¤*'~``~'*¤!|", "•._.••´¯``•.¸¸.•` [[text]] `•.¸¸.•´´¯`••._.•", "¸„.-•~¹°”ˆ˜¨ [[text]] ¨˜ˆ”°¹~•-.„¸", "(¯´•._.• [[text]] •._.•´¯)", "••¤(`×[¤ [[text]] ¤]×´)¤••", "•´¯`•» [[text]] «•´¯`•", " .o0×X×0o. [[text]] .o0×X×0o.", "¤¸¸.•´¯`•¸¸.•..>> [[text]] <<..•.¸¸•´¯`•.¸¸¤", "—(••÷[ [[text]] ]÷••)—", "¸,ø¤º°`°º¤ø,¸ [[text]] ¸,ø¤º°`°º¤ø,¸", "`•.¸¸.•´´¯`••._.• [[text]] •._.••`¯´´•.¸¸.•`", ",-*' ^ '~*-.,_,.-*~ [[text]] ~*-.,_,.-*~' ^ '*-,", "`•.,¸¸,.•´¯ [[text]] ¯`•.,¸¸,.•´", "↤↤↤↤↤ [[text]] ↦↦↦↦↦", "➶➶➶➶➶ [[text]] ➷➷➷➷➷", "↫↫↫↫↫ [[text]] ↬↬↬↬↬", "·.¸¸.·♩♪♫ [[text]] ♫♪♩·.¸¸.·", "【｡_｡】 [[text]] 【｡_｡】", "]|I{•------» [[text]] «------•}I|[", "▀▄▀▄▀▄ [[text]] ▄▀▄▀▄▀", "(-_-) [[text]] (-_-)", "•´¯`•. [[text]] .•´¯`•", "-漫~*'¨¯¨'*·舞~ [[text]] ~舞*'¨¯¨'*·~漫-", "๑۞๑,¸¸,ø¤º°`°๑۩ [[text]] ๑۩ ,¸¸,ø¤º°`°๑۞๑", ".•°¤*(¯`★´¯)*¤° [[text]] °¤*(¯´★`¯)*¤°•.", "••.•´¯`•.•• [[text]] ••.•´¯`•.••", "¤¸¸.•´¯`•¸¸.•..>> [[text]] <<..•.¸¸•´¯`•.¸¸¤", "◦•●◉✿ [[text]] ✿◉●•◦", "╚»★«╝ [[text]] ╚»★«╝", "-·=»‡«=·- [[text]] -·=»‡«=·-", "∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ [[text]] ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙", "¸¸♬·¯·♩¸¸♪·¯·♫¸¸ [[text]] ¸¸♫·¯·♪¸¸♩·¯·♬¸¸", "ஜ۩۞۩ஜ [[text]] ஜ۩۞۩ஜ", "¤ (¯´☆✭.¸_)¤ [[text]] ¤(_¸.✭☆´¯) ¤", "(¯`·.¸¸.·´¯`·.¸¸.-> [[text]] <-.¸¸.·´¯`·.¸¸.·´¯)", "✿.｡.:* ☆:**:. [[text]] .:**:.☆*.:｡.✿", ".•♫•♬• [[text]] •♬•♫•.", "ღ(¯`◕‿◕´¯) ♫ ♪ ♫ [[text]] ♫ ♪ ♫ (¯`◕‿◕´¯)ღ", "«-(¯`v´¯)-« [[text]] »-(¯`v´¯)-»"];
     function wrapInFlourish(text) {
@@ -612,56 +638,33 @@ function backward(text) {
       return randomSymbols(number) +"  "+ text +"  "+ randomSymbols(number)
     }
 
-
-
     function firework(text) {
       return text.split("").join("҉")+ "҉";
     }
-
-
-
 
     function weirdBox(text) {
       return text.replace(/([^\s])/g,"[̲̅$1]");
     }
 
-
-
-
     function littleSparkles(text) {
       return "˜”*°•.˜”*°• "+text+" •°*”˜.•°*”˜";
     }
-
-
-
 
     function kirbyHug(text) {
       return "(っ◔◡◔)っ ♥ " + text + " ♥"
     }
 
-
-
-
     function dottyJoiner(text) {
       return "░" + text.split("").join("░") + "░";
     }
-
-
-
 
     function wavyJoiner(text) {
       return "≋" + text.split("").join("≋") + "≋";
     }
 
-
-
-
     function diametricAngleFrame(text) {
       return text.replace(/([^\s])/g,"『$1』");
     }
-
-
-
 
     function thickBlockFramed(text) {
       return text.replace(/([^\s])/g,"【$1】");
@@ -676,8 +679,7 @@ function backward(text) {
        }
       return out;
     }
-     
-    
+       
     /* eslint-disable */
     const futureAlienCharMap = {"0":"0","1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","a":"ᗩ","b":"ᗷ","c":"ᑢ","d":"ᕲ","e":"ᘿ","f":"ᖴ","g":"ᘜ","h":"ᕼ","i":"ᓰ","j":"ᒚ","k":"ᖽᐸ","l":"ᒪ","m":"ᘻ","n":"ᘉ","o":"ᓍ","p":"ᕵ","q":"ᕴ","r":"ᖇ","s":"S","t":"ᖶ","u":"ᑘ","v":"ᐺ","w":"ᘺ","x":"᙭","y":"ᖻ","z":"ᗱ","A":"ᗩ","B":"ᗷ","C":"ᑢ","D":"ᕲ","E":"ᘿ","F":"ᖴ","G":"ᘜ","H":"ᕼ","I":"ᓰ","J":"ᒚ","K":"ᖽᐸ","L":"ᒪ","M":"ᘻ","N":"ᘉ","O":"ᓍ","P":"ᕵ","Q":"ᕴ","R":"ᖇ","S":"S","T":"ᖶ","U":"ᑘ","V":"ᐺ","W":"ᘺ","X":"᙭","Y":"ᖻ","Z":"ᗱ"};
     const squiggle6CharMap = {"0":"0","1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","a":"ค","b":"๖","c":"¢","d":"໓","e":"ē","f":"f","g":"ງ","h":"h","i":"i","j":"ว","k":"k","l":"l","m":"๓","n":"ຖ","o":"໐","p":"p","q":"๑","r":"r","s":"Ş","t":"t","u":"น","v":"ง","w":"ຟ","x":"x","y":"ฯ","z":"ຊ","A":"ค","B":"๖","C":"¢","D":"໓","E":"ē","F":"f","G":"ງ","H":"h","I":"i","J":"ว","K":"k","L":"l","M":"๓","N":"ຖ","O":"໐","P":"p","Q":"๑","R":"r","S":"Ş","T":"t","U":"น","V":"ง","W":"ຟ","X":"x","Y":"ฯ","Z":"ຊ"};
@@ -711,8 +713,6 @@ const boldSansCharMap = {"0":"𝟬","1":"𝟭","2":"𝟮","3":"𝟯","4":"𝟰",
 
     
     function Lunicode(){this.tools={flip:{init:function(){for(i in this.map)this.map[this.map[i]]=i},encode:function(i){for(var r,t=[],o=0,h=i.length;h>o;o++)r=i.charAt(o),o>0&&("̤"==r||"̗"==r||"̖"==r||"̮"==r)?(r=this.map[i.charAt(o-1)+r],t.pop()):(r=this.map[r],"undefined"==typeof r&&(r=i.charAt(o))),t.push(r);return t.reverse().join("")},decode:function(i){for(var r,t=[],o=0,h=i.length;h>o;o++)r=i.charAt(o),o>0&&("̤"==r||"̗"==r||"̖"==r||"̮"==r)?(r=this.map[i.charAt(o-1)+r],t.pop()):(r=this.map[r],"undefined"==typeof r&&(r=i.charAt(o))),t.push(r);return t.reverse().join("")},map:{a:"ɐ",b:"q",c:"ɔ",d:"p",e:"ǝ",f:"ɟ",g:"ɓ",h:"ɥ",i:"ı",j:"ɾ",k:"ʞ",l:"l",m:"ɯ",n:"u",r:"ɹ",t:"ʇ",v:"ʌ",w:"ʍ",y:"ʎ",A:"∀",B:"ᙠ",C:"Ɔ",D:"ᗡ",E:"Ǝ",F:"Ⅎ",G:"⅁",J:"ſ",K:"⋊",L:"˥",M:"W",P:"Ԁ",Q:"Ό",R:"ᴚ",T:"⊥",U:"∩",V:"Λ",Y:"⅄",1:"⇂",2:"ᄅ",3:"Ɛ",4:"ㄣ",5:"ގ",6:"9",7:"ㄥ","&":"⅋",".":"˙",'"':"„",";":"؛","[":"]","(":")","{":"}","?":"¿","!":"¡","'":",","<":">","‾":"_","¯":"_","‿":"⁀","⁅":"⁆","∴":"∵","\r":"\n","ß":"ᙠ","̈":"̤","ä":"ɐ̤","ö":"o̤","ü":"n̤","Ä":"∀̤","Ö":"O̤","Ü":"∩̤","´":" ̗","é":"ǝ̗","á":"ɐ̗","ó":"o̗","ú":"n̗","É":"Ǝ̗","Á":"∀̗","Ó":"O̗","Ú":"∩̗","`":" ̖","è":"ǝ̖","à":"ɐ̖","ò":"o̖","ù":"n̖","È":"Ǝ̖","À":"∀̖","Ò":"O̖","Ù":"∩̖","^":" ̮","ê":"ǝ̮","â":"ɐ̮","ô":"o̮","û":"n̮","Ê":"Ǝ̮","Â":"∀̮","Ô":"O̮","Û":"∩̮"}},mirror:{init:function(){for(i in this.map)this.map[this.map[i]]=i},encode:function(i){for(var r,t=[],o=[],h=0,n=i.length;n>h;h++)r=i.charAt(h),h>0&&("̈"==r||"̀"==r||"́"==r||"̂"==r)?(r=this.map[i.charAt(h-1)+r],t.pop()):(r=this.map[r],"undefined"==typeof r&&(r=i.charAt(h))),"\n"==r?(o.push(t.reverse().join("")),t=[]):t.push(r);return o.push(t.reverse().join("")),o.join("\n")},decode:function(i){for(var r,t=[],o=[],h=0,n=i.length;n>h;h++)r=i.charAt(h),h>0&&("̈"==r||"̀"==r||"́"==r||"̂"==r)?(r=this.map[i.charAt(h-1)+r],t.pop()):(r=this.map[r],"undefined"==typeof r&&(r=i.charAt(h))),"\n"==r?(o.push(t.reverse().join("")),t=[]):t.push(r);return o.push(t.reverse().join("")),o.join("\n")},map:{a:"ɒ",b:"d",c:"ɔ",e:"ɘ",f:"Ꮈ",g:"ǫ",h:"ʜ",j:"ꞁ",k:"ʞ",l:"|",n:"ᴎ",p:"q",r:"ɿ",s:"ꙅ",t:"ƚ",y:"ʏ",z:"ƹ",B:"ᙠ",C:"Ɔ",D:"ᗡ",E:"Ǝ",F:"ꟻ",G:"Ꭾ",J:"Ⴑ",K:"⋊",L:"⅃",N:"Ͷ",P:"ꟼ",Q:"Ọ",R:"Я",S:"Ꙅ",Z:"Ƹ",1:"",2:"",3:"",4:"",5:"",6:"",7:"","&":"",";":"","[":"]","(":")","{":"}","?":"⸮","<":">","ä":"ɒ̈","ß":"ᙠ","´":"`","é":"ɘ̀","á":"ɒ̀","ó":"ò","ú":"ù","É":"Ǝ̀","Á":"À","Ó":"Ò","Ú":"Ù","`":"´","è":"ɘ́","à":"ɒ́","È":"Ǝ́","ê":"ɘ̂","â":"ɒ̂","Ê":"Ǝ̂","Ø":"ᴓ","ø":"ᴓ"}},creepify:{init:function(){for(var i=768;789>=i;i++)this.diacriticsTop.push(String.fromCharCode(i));for(var i=790;819>=i;i++)794!=i&&795!=i&&this.diacriticsBottom.push(String.fromCharCode(i));this.diacriticsTop.push(String.fromCharCode(794)),this.diacriticsTop.push(String.fromCharCode(795));for(var i=820;824>=i;i++)this.diacriticsMiddle.push(String.fromCharCode(i));for(var i=825;828>=i;i++)this.diacriticsBottom.push(String.fromCharCode(i));for(var i=829;836>=i;i++)this.diacriticsTop.push(String.fromCharCode(i));this.diacriticsTop.push(String.fromCharCode(836)),this.diacriticsBottom.push(String.fromCharCode(837)),this.diacriticsTop.push(String.fromCharCode(838)),this.diacriticsBottom.push(String.fromCharCode(839)),this.diacriticsBottom.push(String.fromCharCode(840)),this.diacriticsBottom.push(String.fromCharCode(841)),this.diacriticsTop.push(String.fromCharCode(842)),this.diacriticsTop.push(String.fromCharCode(843)),this.diacriticsTop.push(String.fromCharCode(844)),this.diacriticsBottom.push(String.fromCharCode(845)),this.diacriticsBottom.push(String.fromCharCode(846)),this.diacriticsTop.push(String.fromCharCode(848)),this.diacriticsTop.push(String.fromCharCode(849)),this.diacriticsTop.push(String.fromCharCode(850)),this.diacriticsBottom.push(String.fromCharCode(851)),this.diacriticsBottom.push(String.fromCharCode(852)),this.diacriticsBottom.push(String.fromCharCode(853)),this.diacriticsBottom.push(String.fromCharCode(854)),this.diacriticsTop.push(String.fromCharCode(855)),this.diacriticsTop.push(String.fromCharCode(856)),this.diacriticsBottom.push(String.fromCharCode(857)),this.diacriticsBottom.push(String.fromCharCode(858)),this.diacriticsTop.push(String.fromCharCode(859)),this.diacriticsBottom.push(String.fromCharCode(860)),this.diacriticsTop.push(String.fromCharCode(861)),this.diacriticsTop.push(String.fromCharCode(861)),this.diacriticsBottom.push(String.fromCharCode(863)),this.diacriticsTop.push(String.fromCharCode(864)),this.diacriticsTop.push(String.fromCharCode(865))},encode:function(r){var t,o="";for(i in r){if(t=r[i],this.options.middle&&(t+=this.diacriticsMiddle[Math.floor(Math.random()*this.diacriticsMiddle.length)]),this.options.top)for(var h=this.diacriticsTop.length-1,n=0,a=this.options.maxHeight-Math.random()*(this.options.randomization/100*this.options.maxHeight);a>n;n++)t+=this.diacriticsTop[Math.floor(Math.random()*h)];if(this.options.bottom)for(var s=this.diacriticsBottom.length-1,n=0,a=this.options.maxHeight-Math.random()*(this.options.randomization/100*this.options.maxHeight);a>n;n++)t+=this.diacriticsBottom[Math.floor(Math.random()*s)];o+=t}return o},decode:function(r){var t,o="";for(i in r)t=r[i].charCodeAt(0),(768>t||t>865)&&(o+=r[i]);return o},diacriticsTop:[],diacriticsMiddle:[],diacriticsBottom:[],options:{top:!0,middle:!0,bottom:!0,maxHeight:15,randomization:100}},bubbles:{init:function(){for(var i=49;57>=i;i++)this.map[String.fromCharCode(i)]=String.fromCharCode(i+9263);this.map[0]="⓪";for(var i=65;90>=i;i++)this.map[String.fromCharCode(i)]=String.fromCharCode(i+9333);for(var i=97;122>=i;i++)this.map[String.fromCharCode(i)]=String.fromCharCode(i+9327);for(i in this.map)this.mapInverse[this.map[i]]=i},encode:function(r){var t,o="",h=!0;for(i in r)t=this.map[r[i]],"undefined"==typeof t&&(r[i].charCodeAt(0)>=33?(t=r[i]+String.fromCharCode(8413),h||(t=String.fromCharCode(8239)+String.fromCharCode(160)+String.fromCharCode(160)+String.fromCharCode(8239)+t)):t=r[i]),o+=t,h="\n"==t;return o},decode:function(r){var t,o="",h="";for(i in r)t=this.mapInverse[r[i]],o+="undefined"==typeof t?r[i]:t;for(i in o)t=o[i].charCodeAt(0),160!=t&&8239!=t&&8413!=t&&(h+=o[i]);return h},map:{},mapInverse:{}},squares:{init:function(){},encode:function(r){var t,o="",h=!0;for(i in r)r[i].charCodeAt(0)>=33?(t=r[i]+String.fromCharCode(8414),h||(t=String.fromCharCode(8239)+String.fromCharCode(160)+String.fromCharCode(160)+String.fromCharCode(8239)+t)):t=r[i],o+=t,h="\n"==t;return o},decode:function(r){var t,o="";for(i in r)t=r[i].charCodeAt(0),160!=t&&8239!=t&&8414!=t&&(o+=r[i]);return o}},roundsquares:{init:function(){},encode:function(r){var t,o="",h=!0;for(i in r)r[i].charCodeAt(0)>=33?(t=r[i]+String.fromCharCode(8419),h||(t=String.fromCharCode(160)+String.fromCharCode(160)+String.fromCharCode(160)+t)):t=r[i],o+=t,h="\n"==t;return o},decode:function(r){var t,o="";for(i in r)t=r[i].charCodeAt(0),160!=t&&8239!=t&&8419!=t&&(o+=r[i]);return o}},bent:{init:function(){for(i in this.map)this.map[this.map[i]]=i},encode:function(i){for(var r,t="",o=0,h=i.length;h>o;o++)r=this.map[i.charAt(o)],"undefined"==typeof r&&(r=i.charAt(o)),t+=r;return t},decode:function(i){for(var r,t="",o=0,h=i.length;h>o;o++)r=this.map[i.charAt(o)],"undefined"==typeof r&&(r=i.charAt(o)),t+=r;return t},map:{a:"ą",b:"ҍ",c:"ç",d:"ժ",e:"ҽ",f:"ƒ",g:"ց",h:"հ",i:"ì",j:"ʝ",k:"ҟ",l:"Ӏ",m:"ʍ",n:"ղ",o:"օ",p:"ք",q:"զ",r:"ɾ",s:"ʂ",t:"է",u:"մ",v:"ѵ",w:"ա",x:"×",y:"վ",z:"Հ",A:"Ⱥ",B:"β",C:"↻",D:"Ꭰ",E:"Ɛ",F:"Ƒ",G:"Ɠ",H:"Ƕ",I:"į",J:"ل",K:"Ҡ",L:"Ꝉ",M:"Ɱ",N:"ហ",O:"ට",P:"φ",Q:"Ҩ",R:"འ",S:"Ϛ",T:"Ͳ",U:"Ա",V:"Ỽ",W:"చ",X:"ჯ",Y:"Ӌ",Z:"ɀ",0:"⊘",1:"������",2:"ϩ",3:"Ӡ",4:"५",5:"Ƽ",6:"Ϭ",7:"7",8:"������",9:"९","&":"⅋","(":"{",")":"}","{":"(","}":")","ä":"ą̈","ö":"օ̈","ü":"մ̈","Ä":"Ⱥ̈","Ö":"ට̈","Ü":"Ա̈","é":"ҽ́","á":"ą́","ó":"օ́","ú":"մ́","É":"Ɛ́","Á":"Ⱥ́","Ó":"ට́","Ú":"Ա́","è":"ҽ̀","à":"ą̀","ò":"օ̀","ù":"մ̀","È":"Ɛ̀","À":"Ⱥ̀","Ò":"ට̀","Ù":"Ա̀","ê":"ҽ̂","â":"ą̂","ô":"օ̂","û":"մ̂","Ê":"Ɛ̂","Â":"Ⱥ̂","Ô":"ට̂","Û":"Ա̂"}},tiny:{init:function(){for(i in this.map)this.map[this.map[i]]=i},encode:function(i){var r,t="";i=i.toUpperCase();for(var o=0,h=i.length;h>o;o++)r=this.map[i.charAt(o)],"undefined"==typeof r&&(r=i.charAt(o)),t+=r;return t},decode:function(i){for(var r,t="",o=0,h=i.length;h>o;o++)r=this.map[i.charAt(o)],"undefined"==typeof r&&(r=i.charAt(o)),t+=r;return t},map:{A:"ᴀ",B:"ʙ",C:"ᴄ",D:"ᴅ",E:"ᴇ",F:"ꜰ",G:"ɢ",H:"ʜ",I:"ɪ",J:"ᴊ",K:"ᴋ",L:"ʟ",M:"ᴍ",N:"ɴ",O:"ᴏ",P:"ᴘ",Q:"Q",R:"ʀ",S:"ꜱ",T:"ᴛ",U:"ᴜ",V:"ᴠ",W:"ᴡ",X:"x",Y:"ʏ",Z:"ᴢ"}}};for(i in this.tools)this.tools[i].init();this.getHTML=function(i){for(var r,t="",o=!0,h=0,n=0,a=0,s=i.length;s>a;a++)r=i.charCodeAt(a),10==r||13==r?(t+="<br>\n",o=!0):32==r?o?(t+=" ",o=!1):(t+=" ",o=!0):(r>=55296&&56319>=r?(h=r,n=0):h>0?(r>=56320&&57343>=r&&(n=1024*(h-55296)+(r-56320)+65536),h=0):n=r,0!=n&&(t+="&#x"+n.toString(16)+";",o=!0));return t}}
-
-
     
     // CUTE TEXT:
     function cuteText(text) {
@@ -826,20 +826,6 @@ const boldSansCharMap = {"0":"𝟬","1":"𝟭","2":"𝟮","3":"𝟯","4":"𝟰",
     }
     //https://github.com/mathiasbynens/esrever
     !function(e){var o="object"==typeof exports&&exports,r="object"==typeof module&&module&&module.exports==o&&module,n="object"==typeof global&&global;(n.global===n||n.window===n)&&(e=n);var t=/(<%= allExceptCombiningMarks %>)(<%= combiningMarks %>+)/g,i=/([\uD800-\uDBFF])([\uDC00-\uDFFF])/g,f=function(e){e=e.replace(t,function(e,o,r){return f(r)+o}).replace(i,"$2$1");for(var o="",r=e.length;r--;)o+=e.charAt(r);return o},l={version:"<%= version %>",reverse:f};if("function"==typeof define&&"object"==typeof define.amd&&define.amd)define(function(){return l});else if(o&&!o.nodeType)if(r)r.exports=l;else for(var a in l)l.hasOwnProperty(a)&&(o[a]=l[a]);else e.esrever=l}(this);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // CRAZY TEXT
@@ -995,6 +981,40 @@ function backward(text) { return $('#english-text').val(); }                //]]
 <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn">Top</button>
 <script src="script.js"></script>
+	
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>StylishFontPro is your one-stop destination for generating stylish fonts and cool text effects. We offer a variety of tools to make your text look unique.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: support@stylishfontgenerator.info</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Stylish St, Font City, FS 12345</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center text-muted">© 2024 StylishFontGenerator. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 
 </html>
