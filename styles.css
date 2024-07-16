@@ -1,0 +1,19 @@
+/* Style for the scroll to top button */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Optional: Style the button on hover */
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
