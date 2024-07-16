@@ -20,101 +20,74 @@
 
 /* General styling for the body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-    padding: 20px;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: #f8f9fa !important;
+    color: #343a40 !important;
+    padding: 20px !important;
+    margin: 0 !important;
 }
 
 /* Centered and styled header */
 h1, p {
-    text-align: center;
-    color: #495057;
-    margin-bottom: 20px;
+    text-align: center !important;
+    color: #495057 !important;
+    margin-bottom: 20px !important;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: 700;
+/* Styling for the container */
+.container {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 10px !important;
 }
 
-p {
-    font-size: 1.2em;
-    font-weight: 400;
+/* Styling for the form */
+form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
 }
 
-/* Styled textarea */
-textarea {
-    width: 100%;
-    padding: 15px;
-    font-size: 1em;
-    background-color: #333333 !important;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
+/* Styling for the input */
+input[type="text"] {
+    padding: 10px !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
 }
 
-/* Input group styling */
-.input-group {
-    margin-bottom: 15px;
+/* Styling for the submit button */
+input[type="submit"] {
+    padding: 10px 20px !important;
+    background-color: #007bff !important;
+    border: none !important;
+    border-radius: 5px !important;
+    color: white !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
 }
 
-.form-control {
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1em;
+input[type="submit"]:hover {
+    background-color: #0056b3 !important;
 }
 
-.input-group-append .input-group-text {
-    background-color: #007bff;
-    color: white;
-    border: 1px solid #007bff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Styling for the output */
+.output {
+    background-color: #e9ecef !important;
+    padding: 10px !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 5px !important;
+    margin-top: 20px !important;
+    word-wrap: break-word !important;
 }
 
-.input-group-append .input-group-text:hover {
-    background-color: #0056b3;
+/* Footer styling */
+footer {
+    text-align: center !important;
+    margin-top: 20px !important;
+    color: #868e96 !important;
 }
 
-/* Fixed position for the sticky textarea */
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background-color: #343a40;
-    padding: 15px;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    textarea {
-        font-size: 0.9em;
-    }
-
-    .form-control {
-        font-size: 0.9em;
-    }
-
-    .input-group-append .input-group-text {
-        font-size: 0.9em;
-    }
-}
