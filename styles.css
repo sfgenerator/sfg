@@ -107,12 +107,12 @@
     }
 }
 
-#sfgenerator #helpfulinfo {
+#sfgenerator, #helpfulinfo {
             padding: 0px 100px;
 }
 
 @media (max-width: 400px) {
-    #sfgenerator helpfulinfo {
+    #sfgenerator, helpfulinfo {
             padding: 0px 0px;
 }
 }
