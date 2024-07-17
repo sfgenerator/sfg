@@ -111,7 +111,7 @@
             padding: 0px 100px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
     #sfgenerator, #helpfulinfo {
             padding: 0px 10px;
 }
