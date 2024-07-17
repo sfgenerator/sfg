@@ -112,7 +112,7 @@
 }
 
 @media (max-width: 400px) {
-    #sfgenerator, helpfulinfo {
-            padding: 0px 0px;
+    #sfgenerator, #helpfulinfo {
+            padding: 0px 10px;
 }
 }
